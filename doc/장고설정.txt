@@ -22,11 +22,11 @@
     2) DATABASES = {
     	'default': {
  	        'ENGINE': 'django.db.backends.mysql',
-        	'NAME': 'djdb',
-        	'USER': 'djdb',
-        	'PASSWORD': 'djdb',
-        	'HOST': '127.0.0.1',
-        	'PORT': 3306
+        	'NAME': 'webdb',
+        	'USER': 'webdb',
+        	'PASSWORD': 'webdb',
+        	'HOST': '192.168.1.139',
+        	'PORT': 3307
     		}
 	}
 
@@ -36,7 +36,24 @@
 
 
 
+8.
+장고 프로젝트 관리 애플리케이션의 관리자 계정 생성하기
+터미널에서
+python manager.py createsuperuser
 
+
+9. 지금까지 작업 내용 확인하기
+1) 서버 시작하기
+    터미널에서
+    # python manage.py runserver 0.0.0.0:8888
+2) 브라우저에서
+    http://127.0.0.1:8888 로 접근
+        http://0.0.0.0:8888
+
+
+====================================================================
+
+[장고 프로젝트의  Application 만들기]
 
 
 
